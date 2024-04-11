@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Camiseta de algodón",
+        "description": "Camiseta de algodón suave y cómoda",
+        "price": 19.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Camiseta+de+algodón",
+        "code": "ABC123",
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "title": "Zapatos deportivos",
+        "description": "Zapatos deportivos ideales para correr",
+        "price": 49.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Zapatos+deportivos",
+        "code": "DEF456",
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "title": "Pantalones vaqueros",
+        "description": "Pantalones vaqueros de estilo moderno",
+        "price": 39.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Pantalones+vaqueros",
+        "code": "GHI789",
+        "stock": 20
+    },
+    {
+        "id": 4,
+        "title": "Camisa a cuadros",
+        "description": "Camisa a cuadros de manga larga",
+        "price": 29.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Camisa+a+cuadros",
+        "code": "JKL012",
+        "stock": 40
+    },
+    {
+        "id": 5,
+        "title": "Gorra de béisbol",
+        "description": "Gorra de béisbol clásica con diseño elegante",
+        "price": 14.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Gorra+de+béisbol",
+        "code": "MNO345",
+        "stock": 60
+    },
+    {
+        "id": 6,
+        "title": "Chaqueta impermeable",
+        "description": "Chaqueta impermeable para días lluviosos",
+        "price": 59.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Chaqueta+impermeable",
+        "code": "PQR678",
+        "stock": 10
+    },
+    {
+        "id": 7,
+        "title": "Bufanda de lana",
+        "description": "Bufanda de lana suave y cálida",
+        "price": 24.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Bufanda+de+lana",
+        "code": "STU901",
+        "stock": 25
+    },
+    {
+        "id": 8,
+        "title": "Reloj de pulsera",
+        "description": "Reloj de pulsera elegante y funcional",
+        "price": 79.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Reloj+de+pulsera",
+        "code": "VWX234",
+        "stock": 15
+    },
+    {
+        "id": 9,
+        "title": "Bolsa de viaje",
+        "description": "Bolsa de viaje espaciosa y resistente",
+        "price": 49.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Bolsa+de+viaje",
+        "code": "YZA567",
+        "stock": 35
+    },
+    {
+        "id": 10,
+        "title": "Sudadera con capucha",
+        "description": "Sudadera con capucha cómoda y moderna",
+        "price": 34.99,
+        "thumbnail": "https://via.placeholder.com/150?text=Sudadera+con+capucha",
+        "code": "BCD890",
+        "stock": 20
+    }
+]
