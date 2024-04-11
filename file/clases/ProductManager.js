@@ -50,12 +50,8 @@ class ProductManager {
     addProduct = async (product) => {
         try{ 
             const productsOnFile = await this.getProductsFromFile();
-          /*   if(productsOnFile.length === 0) {
-                product.id = 1
-            } else {
-                product.id = productsOnFile.length + 1
-            }         */
-            if (!product.title || !product.description || !product.price || !product.thumbnail || !product.code || !product.stock) {
+         
+            if (!product.title || !product.description || !product.price || !product.category || !product.code || !product.stock) {
                 console.error('Todos los campos son obligatorios.');
                 return;
             }             
@@ -68,9 +64,11 @@ class ProductManager {
                 title: product.title,
                 description: product.description,
                 price: product.price,
-                thumbnail: product.thumbnail,
                 code: product.code,
-                stock: product.stock
+                stock: product.stock,
+                status: true, 
+                category: product.category || '', 
+                thumbnails: product.thumbnails || []
                 };
             this.products.push(newProduct);
             await this.saveProductsToFile(newProduct)

@@ -1,5 +1,7 @@
 const fs = require('fs').promises;
 
+const path = `./carrito.json` 
+
 class CartManager {
     constructor(path) {
         this.path = path;
@@ -9,7 +11,7 @@ class CartManager {
         this.loadCarts();
     }
 
-    async initializeCartFile() {
+    initializeCartFile = async() => {
         try {
             const fileExists = await fs.access(this.path).then(() => true).catch(() => false);
             if (!fileExists) {
@@ -21,7 +23,7 @@ class CartManager {
         }
     }
 
-    async loadCarts() {
+    loadCarts = async() => {
         try {
             const data = await fs.readFile(this.path, 'utf8');
             if (data.trim() === "") {
@@ -37,7 +39,7 @@ class CartManager {
         }
     }
 
-    async saveCarts() {
+    saveCarts = async() => {
         try {
             await fs.writeFile(this.path, JSON.stringify(this.carts, null, 2));
             console.log("Carritos guardados correctamente.");
@@ -46,7 +48,7 @@ class CartManager {
         }
     }
 
-    async createCart() {
+    createCart = async() => {
         try {
             const newCart = {
                 id: this.cartIdCounter++,
@@ -61,7 +63,7 @@ class CartManager {
         }
     }
 
-    async getCartById(cartId) {
+    getCartById = async(cartId) => {
         await this.loadCarts();
         const cart = this.carts.find(cart => cart.id === cartId);
         if (cart) {
@@ -71,7 +73,7 @@ class CartManager {
         }
     }
 
-    async addProductToCart(cartId, productId, quantity) {
+    addProductToCart = async(cartId, productId, quantity) => {
         try {
             const cart = await this.getCartById(cartId);
             const productIndex = cart.products.findIndex(product => product.productId === productId);
@@ -87,7 +89,7 @@ class CartManager {
         }
     }
 
-    async deleteProductFromCart(cartId, productId) {
+    deleteProductFromCart = async(cartId, productId) => {
         try {
             const cart = await this.getCartById(cartId);
             const productIndex = cart.products.findIndex(product => product.productId === productId);
